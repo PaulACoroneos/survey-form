@@ -7,27 +7,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta author="Paul Coroneos">
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
-<body class="container">
-  <div class="survey">
+<body>
   <h1 id="title">Survey Form</h1>
   <p id="description">Howdy 🤠! Please help us out by completing this survey.</p>
   <form id="survey-form">
     <div class="form-group">
       <label id="name-label">Name<input type="text" id="name" name="name" placeholder="Enter your name"
-        required /></label>
-      <label id="email-label">Email<input type="email" id="email" name="email" placeholder="Enter your name"
-        required /></label>
-      <label id="age-label">Age (optional)<input type="number" id="age" name="age" min="1" max="125"
-        placeholder="Enter your age" /></label>
+          required /></label>
+      <label id="email-label">Email<input type="email" id="email" name="email" placeholder="Enter your email"
+          required /></label>
+      <label id="number-label">Age (optional)<input type="number" id="number" name="age" min="1" max="125"
+          placeholder="Enter your age" /></label>
     </div>
     <div class="form-group">
-      <p>Do you prefer mustard or ketchup on a hotdog</p>
+      <p>Do you prefer mustard or ketchup on a hotdog?</p>
       <select id="dropdown">
         <option disabled selected value>Select a condiment</option>
-        <option name="mustard-ketchup-hotdog" value="mustard"></option>
-        <option name="mustard-ketchup-hotdog" value="ketchup"></option>
+        <option name="mustard-ketchup-hotdog" value="mustard">Mustard</option>
+        <option name="mustard-ketchup-hotdog" value="ketchup">Ketchup</option>
       </select>
     </div>
     <div class="form-group">
@@ -102,11 +102,10 @@
     </div>
     <div class="form-group">
       <p>Do you have any additional comments?</p>
-      <textarea id="comments" name="comments"></textarea>
+      <textarea id="comments" name="comments" placeholder="Enter your comments here..."></textarea>
     </div>
     <button type="submit" id="submit">Submit</button>
   </form>
-  </div>
 </body>
 
 </html>
