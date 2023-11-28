@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Survey Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta author="Paul Coroneos">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="container">
+  <div class="survey">
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Howdy 🤠! Please help us out by completing this survey.</p>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label">Name<input type="text" id="name" name="name" placeholder="Enter your name"
+        required /></label>
+      <label id="email-label">Email<input type="email" id="email" name="email" placeholder="Enter your name"
+        required /></label>
+      <label id="age-label">Age (optional)<input type="number" id="age" name="age" min="1" max="125"
+        placeholder="Enter your age" /></label>
+    </div>
+    <div class="form-group">
+      <p>Do you prefer mustard or ketchup on a hotdog</p>
+      <select id="dropdown">
+        <option disabled selected value>Select a condiment</option>
+        <option name="mustard-ketchup-hotdog" value="mustard"></option>
+        <option name="mustard-ketchup-hotdog" value="ketchup"></option>
+      </select>
+    </div>
+    <div class="form-group">
+      <p>Is a hotdog a sandwich?</p>
+      <label>
+        <input class="form-radio" id="yes-hotdog-sandwich" type="radio" name="hotdog-sandwich" value="no" />
+        It has two pieces of bread doesnt it?
+      </label>
+      <label>
+        <input class="form-radio" id="no-hotdog-sandwich" type="radio" name="hotdog-sandwich" value="yes" />
+        Are you kidding me?
+      </label>
+    </div>
+    <div class="form-group">
+      <p>What kind of items would you expect to be at a barbeque?</p>
+      <label>
+        <input id="hotdogs" type="checkbox" name="barbeque-items" value="hotdogs" class="form-checkbox" />
+        Hotdogs
+      </label>
+      <label>
+        <input id="hamburgers" type="checkbox" name="barbeque-items" value="hamburgers" class="form-checkbox" />
+        Hamburgers
+      </label>
+      <label>
+        <input id="steak" type="checkbox" name="barbeque-items" value="steak" class="form-checkbox" />
+        Steak
+      </label>
+      <label>
+        <input id="ribs" type="checkbox" name="barbeque-items" value="ribs" class="form-checkbox" />
+        Ribs
+      </label>
+      <label>
+        <input id="chicken" type="checkbox" name="barbeque-items" value="chicken" class="form-checkbox" />
+        Chicken
+      </label>
+      <label>
+        <input id="fish" type="checkbox" name="barbeque-items" value="fish" class="form-checkbox" />
+        Fish
+      </label>
+      <label>
+        <input id="vegetables" type="checkbox" name="barbeque-items" value="vegetables" class="form-checkbox" />
+        Vegetables
+      </label>
+      <label>
+        <input id="potato salad" type="checkbox" name="barbeque-items" value="potato salad" class="form-checkbox" />
+        Potato Salad
+      </label>
+      <label>
+        <input id="macaroni salad" type="checkbox" name="barbeque-items" value="macaroni salad" class="form-checkbox" />
+        Macaroni Salad
+      </label>
+      <label>
+        <input id="pasta salad" type="checkbox" name="barbeque-items" value="pasta salad" class="form-checkbox" />
+        Pasta Salad
+      </label>
+      <label>
+        <input id="fruit" type="checkbox" name="barbeque-items" value="fruit" class="form-checkbox" />
+        Fruit
+      </label>
+      <label>
+        <input id="chips" type="checkbox" name="barbeque-items" value="chips" class="form-checkbox" />
+        Chips
+      </label>
+      <label>
+        <input id="dip" type="checkbox" name="barbeque-items" value="dip" class="form-checkbox" />
+        Dip
+      </label>
+      <label>
+        <input id="dessert" type="checkbox" name="barbeque-items" value="dessert" class="form-checkbox" />
+        Dessert
+      </label>
+    </div>
+    <div class="form-group">
+      <p>Do you have any additional comments?</p>
+      <textarea id="comments" name="comments"></textarea>
+    </div>
+    <button type="submit" id="submit">Submit</button>
+  </form>
+  </div>
+</body>
+
+</html>
