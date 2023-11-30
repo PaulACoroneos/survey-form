@@ -113,3 +113,18 @@ select {
   border: none;
   padding: 10px; /* Padding */
 }
+
+footer {
+  text-align: center;
+  margin: 16px;
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #6B00B3;
+}
